@@ -155,7 +155,7 @@
                 break;
             default:
                 document.getElementById("wrapper-bg").style.backgroundImage = 
-                "url('img/cloud.gif')";
+                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/1ff0b162f9cb9210ed67545445033ff5ced40e5a/img/cloud.gif')";
                 break;
                 
         }
