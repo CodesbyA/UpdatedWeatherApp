@@ -14,17 +14,19 @@
     .then((data) => {
 
         //Weather Data
-        let wData = data.current.weather[0].main;
+        let main = data.current.weather[0].main;
         let description = data.current.weather[0].description;
         let temp = Math.round(data.current.temp);
         let pressure = data.current.pressure;
         let humidity = data.current.humidity;
+        let name = 'Lubbock';
 
 
-        document.getElementById("wrapper-description").innerHTML = description.toUpperCase();
+        document.getElementById("wrapper-description").innerHTML = description;
         document.getElementById("wrapper-temp").innerHTML = temp + " °C";
         document.getElementById("wrapper-pressure").innerHTML = pressure;
         document.getElementById("wrapper-humidity").innerHTML = humidity;
+        document.getElementById("wrapper-name").innerHTML = name;
 
 
         // Hourly Data
@@ -116,46 +118,46 @@
         document.getElementById("wrapper-icon-hour5").src = iconFullUrlHour5;
 
                 //Image
-        switch (wData) {
+        switch (main) {
             case "Snow":
                 document.getElementById("wrapper-bg").style.backgroundImage = 
-                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/snow.gif')";
+                "url('img/snow.gif')";
                 break;
             case "Rain":
                 document.getElementById("wrapper-bg").style.backgroundImage = 
-                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/raining.gif')";
+                "url('img/raining.gif')";
                 break;
             case "Thunderstorm":
                 document.getElementById("wrapper-bg").style.backgroundImage = 
-                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/thunderstorm.gif')";
+                "url('img/thunderstorm.gif')";
                 break;
             case "Drizzle":
                 document.getElementById("wrapper-bg").style.backgroundImage = 
-                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/raining.gif')";
+                "url('img/raining.gif')";
                 break;
             case "Haze":
                 document.getElementById("wrapper-bg").style.backgroundImage = 
-                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/fog.gif')";
+                "url('img/fog.gif')";
                 break;
             case "Mist":
                 document.getElementById("wrapper-bg").style.backgroundImage = 
-                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/fog.gif')";
+                "url('img/fog.gif')";
                 break;
             case "Clear":
                 document.getElementById("wrapper-bg").style.backgroundImage = 
-                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/clear.gif')";
+                "url('img/clear.gif')";
                 break;
             case "Clouds":
                 document.getElementById("wrapper-bg").style.backgroundImage = 
-                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/cloud.gif')";
+                "url('img/cloud.gif')";
                 break;
             case "Fog":
                 document.getElementById("wrapper-bg").style.backgroundImage = 
-                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/fog.gif')";
+                "url('img/fog.gif')";
                 break;
             default:
                 document.getElementById("wrapper-bg").style.backgroundImage = 
-                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/1ff0b162f9cb9210ed67545445033ff5ced40e5a/img/cloud.gif')";
+                "url('img/cloud.gif')";
                 break;
                 
         }
