@@ -115,49 +115,49 @@
         let iconFullUrlHour5 = iconBaseUrl + iconHour5 + iconFormat;
         document.getElementById("wrapper-icon-hour5").src = iconFullUrlHour5;
 
-        // //Image
-        // switch (wData) {
-        //     case "Snow":
-        //         document.getElementById("wrapper-bg").style.backgroundImage = 
-        //         "url('')";
-        //         break;
-        //     case "Rain":
-        //         document.getElementById("wrapper-bg").style.backgroundImage = 
-        //         "url('')";
-        //         break;
-        //     case "Thunderstorm":
-        //         document.getElementById("wrapper-bg").style.backgroundImage = 
-        //         "url('')";
-        //         break;
-        //     case "Drizzle":
-        //         document.getElementById("wrapper-bg").style.backgroundImage = 
-        //         "url('')";
-        //         break;
-        //     case "Haze":
-        //         document.getElementById("wrapper-bg").style.backgroundImage = 
-        //         "url('')";
-        //         break;
-        //     case "Mist":
-        //         document.getElementById("wrapper-bg").style.backgroundImage = 
-        //         "url('')";
-        //         break;
-        //     case "Clear":
-        //         document.getElementById("wrapper-bg").style.backgroundImage = 
-        //         "url('')";
-        //         break;
-        //     case "Clouds":
-        //         document.getElementById("wrapper-bg").style.backgroundImage = 
-        //         "url('')";
-        //         break;
-        //     case "Fog":
-        //         document.getElementById("wrapper-bg").style.backgroundImage = 
-        //         "url('')";
-        //         break;
-        //     default:
-        //         document.getElementById("wrapper-bg").style.backgroundImage = 
-        //         "url('')";
-        //         break;
+                //Image
+        switch (wData) {
+            case "Snow":
+                document.getElementById("wrapper-bg").style.backgroundImage = 
+                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/snow.gif')";
+                break;
+            case "Rain":
+                document.getElementById("wrapper-bg").style.backgroundImage = 
+                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/raining.gif')";
+                break;
+            case "Thunderstorm":
+                document.getElementById("wrapper-bg").style.backgroundImage = 
+                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/thunderstorm.gif')";
+                break;
+            case "Drizzle":
+                document.getElementById("wrapper-bg").style.backgroundImage = 
+                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/raining.gif')";
+                break;
+            case "Haze":
+                document.getElementById("wrapper-bg").style.backgroundImage = 
+                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/fog.gif')";
+                break;
+            case "Mist":
+                document.getElementById("wrapper-bg").style.backgroundImage = 
+                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/fog.gif')";
+                break;
+            case "Clear":
+                document.getElementById("wrapper-bg").style.backgroundImage = 
+                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/clear.gif')";
+                break;
+            case "Clouds":
+                document.getElementById("wrapper-bg").style.backgroundImage = 
+                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/cloud.gif')";
+                break;
+            case "Fog":
+                document.getElementById("wrapper-bg").style.backgroundImage = 
+                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/fog.gif')";
+                break;
+            default:
+                document.getElementById("wrapper-bg").style.backgroundImage = 
+                "url('https://github.com/CodesbyA/UpdatedWeatherApp/blob/91b3e3661f56bb96a0c239f346ea811e1d7eddbc/img/cloud.gif')";
+                break;
                 
-        // }
+        }
 
     });
